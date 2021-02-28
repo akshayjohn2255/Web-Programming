@@ -1,0 +1,23 @@
+<html>
+<head>
+<body>
+Enter the number<input type="text" id="text1">
+<p id="a"></p>
+<button onclick="compute()">Try it</button>
+
+<script>
+function compute() {
+ var rem,reverse=0;
+ var n=document.getElementById("text1").value;
+  while(n){
+       rem= n % 10;
+        reverse= (reverse* 10) +rem;
+         n=n/10|0
+        document.getElementById("a").innerHTML ="Reverse of the entered number is:"+ reverse;
+        } 
+} 
+</script>
+</body>
+</html>
+
+

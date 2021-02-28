@@ -1,0 +1,26 @@
+<html>
+<head>
+</head>
+<body>
+Enter the number:<input type="text" id="imo"><br>
+<br>
+<button onclick="numcheck()">check here</button>
+<script>
+function numcheck(){
+var a= document.getElementById("imo").value;
+if(a>0)
+{
+document.write("Entered number positive");
+}
+else if(a==0)
+{
+document.write("Entered number is Zero");
+}
+else
+{
+document.write("Entered number is negative");
+}
+}
+</script>
+</body>
+</html>
